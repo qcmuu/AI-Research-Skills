@@ -15,6 +15,7 @@ export default defineConfig({
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/Yuuqq/AI-Research-SKILLs' },
       ],
+      pagination: false,
       customCss: ['/src/styles/custom.css'],
       head: [
         {

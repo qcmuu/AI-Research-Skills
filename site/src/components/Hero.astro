@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<div class="hero-section">
+  <div class="glow-orb" style="width:400px;height:400px;background:rgba(99,102,241,0.08);top:-100px;left:20%;"></div>
+  <div class="glow-orb" style="width:300px;height:300px;background:rgba(168,85,247,0.06);top:50px;right:15%;"></div>
+  <h1 class="hero-title">{title}</h1>
+  <p class="hero-subtitle">
+    The most comprehensive open-source library of AI research skills.
+    From hypothesis to paper — 94 expert-level skills across 22 categories,
+    enabling autonomous AI research.
+  </p>
+</div>

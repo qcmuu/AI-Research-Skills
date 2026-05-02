@@ -1,0 +1,18 @@
+---
+const phases = [
+  'Architecture', 'Tokenization', 'Fine-Tuning', 'Interpretability',
+  'Data Processing', 'Post-Training', 'Safety', 'Distributed Training',
+  'Infrastructure', 'Optimization', 'Evaluation', 'Inference',
+  'MLOps', 'Agents', 'RAG', 'Prompt Engineering',
+  'Observability', 'Multimodal', 'Emerging Tech', 'Paper Writing', 'Ideation',
+];
+---
+
+<div class="lifecycle-flow">
+  {phases.map((p, i) => (
+    <>
+      <span class="lifecycle-node">{p}</span>
+      {i < phases.length - 1 && <span class="lifecycle-arrow">→</span>}
+    </>
+  ))}
+</div>

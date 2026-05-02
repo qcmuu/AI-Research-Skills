@@ -1,0 +1,17 @@
+---
+interface Props {
+  categories: { icon: string; title: string; count: number; desc: string }[];
+}
+const { categories } = Astro.props;
+---
+
+<div class="bento-grid">
+  {categories.map((cat, i) => (
+    <div class="bento-card" style={`--shimmer-delay: ${i * 0.5}s`}>
+      <div class="bento-card-icon">{cat.icon}</div>
+      <div class="bento-card-title">{cat.title}</div>
+      <div class="bento-card-count">{cat.count} skills</div>
+      <div class="bento-card-desc">{cat.desc}</div>
+    </div>
+  ))}
+</div>

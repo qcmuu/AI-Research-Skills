@@ -1,0 +1,54 @@
+---
+title: AI Research Skills
+template: splash
+---
+
+import Hero from '../../components/Hero.astro';
+import StatsRow from '../../components/StatsRow.astro';
+import BentoGrid from '../../components/BentoGrid.astro';
+import LifecycleFlow from '../../components/LifecycleFlow.astro';
+
+<Hero title="AI Research Skills" />
+
+<StatsRow stats={[
+  { number: '94', label: 'Skills' },
+  { number: '22', label: 'Categories' },
+  { number: '1', label: 'Orchestrator' },
+  { number: '∞', label: 'Experiments' },
+]} />
+
+## Research Lifecycle
+
+<LifecycleFlow />
+
+## Skill Categories
+
+<BentoGrid categories={[
+  { icon: '🧠', title: 'Model Architecture', count: 5, desc: 'LLM implementations, pretrained architectures, custom model design' },
+  { icon: '✂️', title: 'Tokenization', count: 2, desc: 'HuggingFace Tokenizers, SentencePiece for text processing' },
+  { icon: '🔧', title: 'Fine-Tuning', count: 4, desc: 'Axolotl, LLaMA-Factory, Unsloth, PEFT for task adaptation' },
+  { icon: '🔬', title: 'Interpretability', count: 4, desc: 'TransformerLens, SAELens, NNsight for model understanding' },
+  { icon: '📊', title: 'Data Processing', count: 2, desc: 'Ray Data, NeMo Curator for dataset curation' },
+  { icon: '🏋️', title: 'Post-Training', count: 8, desc: 'TRL, GRPO, OpenRLHF, SimPO for RLHF/DPO/GRPO training' },
+  { icon: '🛡️', title: 'Safety & Alignment', count: 4, desc: 'Constitutional AI, LlamaGuard, guardrails for safe AI' },
+  { icon: '⚡', title: 'Distributed Training', count: 6, desc: 'DeepSpeed, FSDP, Megatron, Accelerate for scale' },
+  { icon: '☁️', title: 'Infrastructure', count: 3, desc: 'Modal, SkyPilot, Lambda Labs for cloud compute' },
+  { icon: '🚀', title: 'Optimization', count: 6, desc: 'Flash Attention, quantization, GGUF for efficiency' },
+  { icon: '📏', title: 'Evaluation', count: 3, desc: 'lm-evaluation-harness, BigCode for benchmarking' },
+  { icon: '🌐', title: 'Inference & Serving', count: 4, desc: 'vLLM, TensorRT-LLM, llama.cpp, SGLang' },
+  { icon: '📈', title: 'MLOps', count: 3, desc: 'W&B, MLflow, TensorBoard for experiment tracking' },
+  { icon: '🤖', title: 'Agents', count: 4, desc: 'LangChain, LlamaIndex, CrewAI, AutoGPT frameworks' },
+  { icon: '🔗', title: 'RAG', count: 5, desc: 'Chroma, FAISS, Pinecone, Qdrant for retrieval-augmented gen' },
+  { icon: '💬', title: 'Prompt Engineering', count: 4, desc: 'DSPy, Instructor, Guidance, Outlines for structured output' },
+  { icon: '👁️', title: 'Observability', count: 2, desc: 'LangSmith, Phoenix for LLM monitoring' },
+  { icon: '🎨', title: 'Multimodal', count: 7, desc: 'CLIP, Whisper, LLaVA, Stable Diffusion, SAM, BLIP-2' },
+  { icon: '🔮', title: 'Emerging Techniques', count: 6, desc: 'MoE, model merging, distillation, pruning, long context' },
+  { icon: '📝', title: 'Paper Writing', count: 4, desc: 'LaTeX templates for NeurIPS, ICML, ICLR, ACL, AAAI' },
+  { icon: '💡', title: 'Research Ideation', count: 2, desc: 'Brainstorming and creative thinking for novel research' },
+]} />
+
+## Getting Started
+
+Browse skills using the **sidebar navigation** organized by research lifecycle phase, or use the **search bar** (`Ctrl+K`) to find specific skills by name, tag, or description.
+
+The **Autoresearch** skill orchestrates the full research lifecycle — from hypothesis to experimental verification — routing to the right specialized skill at each step.
